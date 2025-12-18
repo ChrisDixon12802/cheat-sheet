@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet - Page 4</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet - Semantic & Media</h1>
+
+      <!-- Semantic HTML5 -->
+      <section class="section">
+        <h2>Semantic HTML5 Elements</h2>
+        <div class="code-block">
+          <code>&lt;header&gt;</code> - Page/section header<br />
+          <code>&lt;nav&gt;</code> - Navigation links<br />
+          <code>&lt;main&gt;</code> - Main content (unique per page)<br />
+          <code>&lt;section&gt;</code> - Thematic content section<br />
+          <code>&lt;article&gt;</code> - Independent, self-contained content<br />
+          <code>&lt;aside&gt;</code> - Sidebar/tangential content<br />
+          <code>&lt;footer&gt;</code> - Page/section footer<br />
+          <code>&lt;figure&gt;</code> - Self-contained media<br />
+          <code>&lt;figcaption&gt;</code> - Caption for figure<br />
+          <code>&lt;details&gt;</code> - Collapsible details<br />
+          <code>&lt;summary&gt;</code> - Heading for details<br />
+          <code>&lt;mark&gt;</code> - Marked/highlighted text<br />
+          <code>&lt;time datetime="2025-12-18"&gt;</code> - Date/time
+        </div>
+      </section>
+
+      <!-- Page Structure Example -->
+      <section class="section">
+        <h2>Semantic Page Structure</h2>
+        <div class="code-block">
+          <code
+            >&lt;body&gt;<br />
+            &nbsp;&nbsp;&lt;header&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;Navigation&lt;/nav&gt;<br />
+            &nbsp;&nbsp;&lt;/header&gt;<br /><br />
+
+            &nbsp;&nbsp;&lt;main&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;Content&lt;/section&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;aside&gt;Sidebar&lt;/aside&gt;<br />
+            &nbsp;&nbsp;&lt;/main&gt;<br /><br />
+
+            &nbsp;&nbsp;&lt;footer&gt;Footer&lt;/footer&gt;<br />
+            &lt;/body&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Images -->
+      <section class="section">
+        <h2>Images & Picture</h2>
+        <div class="code-block">
+          <code>&lt;img src="image.jpg" alt="Description"&gt;</code><br />
+          <code>&lt;img width="300" height="200"&gt;</code> - Fixed size<br />
+          <code>&lt;img loading="lazy"&gt;</code> - Lazy loading<br />
+          <code>&lt;img srcset="small.jpg 480w, large.jpg 800w"&gt;</code> -
+          Responsive<br />
+          <code>&lt;img usemap="#mapname"&gt;</code> - Image map<br /><br />
+
+          <strong>Picture Element (responsive images):</strong><br />
+          <code
+            >&lt;picture&gt;<br />
+            &nbsp;&nbsp;&lt;source media="(min-width: 800px)"
+            srcset="large.jpg"&gt;<br />
+            &nbsp;&nbsp;&lt;source media="(min-width: 400px)"
+            srcset="medium.jpg"&gt;<br />
+            &nbsp;&nbsp;&lt;img src="small.jpg" alt="Description"&gt;<br />
+            &lt;/picture&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Image Maps -->
+      <section class="section">
+        <h2>Image Maps</h2>
+        <div class="code-block">
+          <code
+            >&lt;img src="map.jpg" usemap="#workmap"&gt;<br />
+            &lt;map name="workmap"&gt;<br />
+            &nbsp;&nbsp;&lt;area shape="rect" coords="34,44,270,350"
+            href="link.html"&gt;<br />
+            &nbsp;&nbsp;&lt;area shape="circle" coords="337,300,44"
+            href="link2.html"&gt;<br />
+            &nbsp;&nbsp;&lt;area shape="poly" coords="140,121,181,116,204"
+            href="link3.html"&gt;<br />
+            &lt;/map&gt;</code
+          ><br /><br />
+
+          <strong>Shape types:</strong><br />
+          <code>shape="rect"</code> - Rectangle (x1,y1,x2,y2)<br />
+          <code>shape="circle"</code> - Circle (x,y,radius)<br />
+          <code>shape="poly"</code> - Polygon (x1,y1,x2,y2,x3,y3...)
+        </div>
+      </section>
+
+      <!-- Audio -->
+      <section class="section">
+        <h2>Audio</h2>
+        <div class="code-block">
+          <code
+            >&lt;audio controls&gt;<br />
+            &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br />
+            &nbsp;&nbsp;&lt;source src="audio.ogg" type="audio/ogg"&gt;<br />
+            &nbsp;&nbsp;Your browser does not support audio.<br />
+            &lt;/audio&gt;</code
+          ><br /><br />
+
+          <strong>Audio Attributes:</strong><br />
+          <code>&lt;audio controls&gt;</code> - Show controls<br />
+          <code>&lt;audio autoplay&gt;</code> - Auto play<br />
+          <code>&lt;audio loop&gt;</code> - Loop playback<br />
+          <code>&lt;audio muted&gt;</code> - Start muted<br />
+          <code>&lt;audio preload="auto"&gt;</code> - Preload audio
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="section">
+        <h2>Video</h2>
+        <div class="code-block">
+          <code
+            >&lt;video width="640" height="360" controls&gt;<br />
+            &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br />
+            &nbsp;&nbsp;&lt;source src="video.webm" type="video/webm"&gt;<br />
+            &nbsp;&nbsp;&lt;track src="subtitles.vtt" kind="subtitles"
+            srclang="en"&gt;<br />
+            &nbsp;&nbsp;Your browser does not support video.<br />
+            &lt;/video&gt;</code
+          ><br /><br />
+
+          <strong>Video Attributes:</strong><br />
+          <code>&lt;video controls&gt;</code> - Show controls<br />
+          <code>&lt;video autoplay&gt;</code> - Auto play<br />
+          <code>&lt;video loop&gt;</code> - Loop playback<br />
+          <code>&lt;video muted&gt;</code> - Start muted<br />
+          <code>&lt;video poster="thumbnail.jpg"&gt;</code> - Thumbnail image<br />
+          <code>&lt;video preload="metadata"&gt;</code> - Preload setting
+        </div>
+      </section>
+
+      <!-- Canvas & SVG -->
+      <section class="section">
+        <h2>Canvas & SVG</h2>
+        <div class="code-block">
+          <strong>Canvas (JavaScript drawing):</strong><br />
+          <code
+            >&lt;canvas id="myCanvas" width="200" height="100"&gt;<br />
+            &nbsp;&nbsp;Fallback content<br />
+            &lt;/canvas&gt;</code
+          ><br /><br />
+
+          <strong>SVG (Scalable Vector Graphics):</strong><br />
+          <code
+            >&lt;svg width="100" height="100"&gt;<br />
+            &nbsp;&nbsp;&lt;circle cx="50" cy="50" r="40" fill="red" /&gt;<br />
+            &lt;/svg&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- iFrame -->
+      <section class="section">
+        <h2>iFrame (Embed Content)</h2>
+        <div class="code-block">
+          <code>&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code
+          ><br />
+          <code>&lt;iframe width="560" height="315"&gt;</code> - Set
+          dimensions<br />
+          <code>&lt;iframe frameborder="0"&gt;</code> - No border<br />
+          <code>&lt;iframe allowfullscreen&gt;</code> - Allow fullscreen<br />
+          <code>&lt;iframe loading="lazy"&gt;</code> - Lazy loading<br />
+          <code>&lt;iframe sandbox&gt;</code> - Security restrictions<br />
+          <code>&lt;iframe name="framename"&gt;</code> - Target name
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="page3.html" class="nav-btn">← Previous</a>
+        <a href="page5.html" class="nav-btn">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn" data-page="1">1</a>
+        <a href="page2.html" class="page-btn" data-page="2">2</a>
+        <a href="page3.html" class="page-btn" data-page="3">3</a>
+        <a href="page4.html" class="page-btn active" data-page="4">4</a>
+        <a href="page5.html" class="page-btn" data-page="5">5</a>
+        <a href="page6.html" class="page-btn" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
