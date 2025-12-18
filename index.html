@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet</h1>
+
+      <!-- Basic Structure -->
+      <section class="section">
+        <h2>Basic Structure</h2>
+        <div class="code-block">
+          <code>&lt;!DOCTYPE html&gt;</code> - Document type declaration<br />
+          <code>&lt;html&gt;</code> - Root element<br />
+          <code>&lt;head&gt;</code> - Metadata container<br />
+          <code>&lt;body&gt;</code> - Visible content<br />
+          <code>&lt;title&gt;</code> - Page title (in head)
+        </div>
+      </section>
+
+      <!-- Text Formatting -->
+      <section class="section">
+        <h2>Text Formatting</h2>
+        <div class="code-block">
+          <code>&lt;h1&gt; to &lt;h6&gt;</code> - Headings (h1 largest)<br />
+          <code>&lt;p&gt;</code> - Paragraph<br />
+          <code>&lt;br&gt;</code> - Line break<br />
+          <code>&lt;hr&gt;</code> - Horizontal rule<br />
+          <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code> -
+          <strong>Bold text</strong><br />
+          <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code> -
+          <em>Italic text</em><br />
+          <code>&lt;u&gt;</code> - <u>Underlined text</u><br />
+          <code>&lt;mark&gt;</code> - <mark>Highlighted text</mark><br />
+          <code>&lt;small&gt;</code> - <small>Smaller text</small><br />
+          <code>&lt;del&gt;</code> - <del>Deleted text</del><br />
+          <code>&lt;ins&gt;</code> - <ins>Inserted text</ins><br />
+          <code>&lt;sub&gt;</code> - Subscript (H<sub>2</sub>O)<br />
+          <code>&lt;sup&gt;</code> - Superscript (x<sup>2</sup>)
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="section">
+        <h2>Links & Images</h2>
+        <div class="code-block">
+          <code>&lt;a href="url"&gt;Link&lt;/a&gt;</code> - Hyperlink<br />
+          <code>&lt;a href="url" target="_blank"&gt;</code> - Opens in new
+          tab<br />
+          <code>&lt;a href="#id"&gt;</code> - Link to element with id<br />
+          <code>&lt;a href="mailto:email"&gt;</code> - Email link<br />
+          <code>&lt;img src="image.jpg" alt="description"&gt;</code> - Image<br />
+          <code>&lt;img width="100" height="50"&gt;</code> - Image dimensions
+        </div>
+      </section>
+
+      <!-- Lists -->
+      <section class="section">
+        <h2>Lists</h2>
+        <div class="code-block">
+          <strong>Unordered List:</strong><br />
+          <code
+            >&lt;ul&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt;<br />
+            &lt;/ul&gt;</code
+          ><br /><br />
+
+          <strong>Ordered List:</strong><br />
+          <code
+            >&lt;ol&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt;<br />
+            &lt;/ol&gt;</code
+          ><br /><br />
+
+          <strong>Description List:</strong><br />
+          <code
+            >&lt;dl&gt;<br />
+            &nbsp;&nbsp;&lt;dt&gt;Term&lt;/dt&gt;<br />
+            &nbsp;&nbsp;&lt;dd&gt;Description&lt;/dd&gt;<br />
+            &lt;/dl&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Tables -->
+      <section class="section">
+        <h2>Tables</h2>
+        <div class="code-block">
+          <code>&lt;table&gt;</code> - Table container<br />
+          <code>&lt;thead&gt;</code> - Table header<br />
+          <code>&lt;tbody&gt;</code> - Table body<br />
+          <code>&lt;tfoot&gt;</code> - Table footer<br />
+          <code>&lt;tr&gt;</code> - Table row<br />
+          <code>&lt;th&gt;</code> - Header cell<br />
+          <code>&lt;td&gt;</code> - Data cell<br />
+          <code>&lt;td colspan="2"&gt;</code> - Spans 2 columns<br />
+          <code>&lt;td rowspan="2"&gt;</code> - Spans 2 rows
+        </div>
+      </section>
+
+      <!-- Forms -->
+      <section class="section">
+        <h2>Forms</h2>
+        <div class="code-block">
+          <code>&lt;form action="/submit" method="POST"&gt;</code><br />
+          <code>&lt;input type="text" name="username"&gt;</code> - Text input<br />
+          <code>&lt;input type="password"&gt;</code> - Password input<br />
+          <code>&lt;input type="email"&gt;</code> - Email input<br />
+          <code>&lt;input type="number"&gt;</code> - Number input<br />
+          <code>&lt;input type="date"&gt;</code> - Date picker<br />
+          <code>&lt;input type="checkbox"&gt;</code> - Checkbox<br />
+          <code>&lt;input type="radio"&gt;</code> - Radio button<br />
+          <code>&lt;input type="file"&gt;</code> - File upload<br />
+          <code>&lt;input type="submit" value="Submit"&gt;</code><br />
+          <code>&lt;textarea rows="4" cols="50"&gt;</code> - Multi-line text<br />
+          <code
+            >&lt;select&gt;&lt;option&gt;Value&lt;/option&gt;&lt;/select&gt;</code
+          >
+          - Dropdown<br />
+          <code>&lt;button type="button"&gt;Click&lt;/button&gt;</code><br />
+          <code>&lt;label for="id"&gt;Label&lt;/label&gt;</code>
+        </div>
+      </section>
+
+      <!-- Semantic HTML5 -->
+      <section class="section">
+        <h2>Semantic HTML5 Elements</h2>
+        <div class="code-block">
+          <code>&lt;header&gt;</code> - Page or section header<br />
+          <code>&lt;nav&gt;</code> - Navigation links<br />
+          <code>&lt;main&gt;</code> - Main content<br />
+          <code>&lt;section&gt;</code> - Content section<br />
+          <code>&lt;article&gt;</code> - Independent content<br />
+          <code>&lt;aside&gt;</code> - Sidebar content<br />
+          <code>&lt;footer&gt;</code> - Page or section footer<br />
+          <code>&lt;figure&gt;</code> - Self-contained content<br />
+          <code>&lt;figcaption&gt;</code> - Figure caption<br />
+          <code>&lt;time&gt;</code> - Date/time
+        </div>
+      </section>
+
+      <!-- Containers -->
+      <section class="section">
+        <h2>Container Elements</h2>
+        <div class="code-block">
+          <code>&lt;div&gt;</code> - Block-level container<br />
+          <code>&lt;span&gt;</code> - Inline container<br />
+          <code>&lt;pre&gt;</code> - Preformatted text<br />
+          <code>&lt;code&gt;</code> - Code snippet<br />
+          <code>&lt;blockquote&gt;</code> - Block quotation
+        </div>
+      </section>
+
+      <!-- Media -->
+      <section class="section">
+        <h2>Media Elements</h2>
+        <div class="code-block">
+          <code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code
+          ><br />
+          <code>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code
+          ><br />
+          <code>&lt;iframe src="url"&gt;&lt;/iframe&gt;</code> - Embed
+          content<br />
+          <code>&lt;canvas&gt;</code> - Graphics container<br />
+          <code>&lt;svg&gt;</code> - Scalable Vector Graphics
+        </div>
+      </section>
+
+      <!-- Common Attributes -->
+      <section class="section">
+        <h2>Common Attributes</h2>
+        <div class="code-block">
+          <code>id="unique-id"</code> - Unique identifier<br />
+          <code>class="class-name"</code> - CSS class<br />
+          <code>style="color: red;"</code> - Inline CSS<br />
+          <code>title="tooltip text"</code> - Tooltip<br />
+          <code>data-*="value"</code> - Custom data attribute<br />
+          <code>hidden</code> - Hide element<br />
+          <code>disabled</code> - Disable form element<br />
+          <code>readonly</code> - Read-only input<br />
+          <code>required</code> - Required form field<br />
+          <code>placeholder="text"</code> - Input placeholder<br />
+          <code>alt="description"</code> - Alternative text
+        </div>
+      </section>
+
+      <!-- Meta Tags -->
+      <section class="section">
+        <h2>Common Meta Tags (in &lt;head&gt;)</h2>
+        <div class="code-block">
+          <code>&lt;meta charset="UTF-8"&gt;</code><br />
+          <code
+            >&lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"&gt;</code
+          ><br />
+          <code>&lt;meta name="description" content="Page description"&gt;</code
+          ><br />
+          <code>&lt;meta name="keywords" content="html, css"&gt;</code><br />
+          <code>&lt;meta name="author" content="Your Name"&gt;</code><br />
+          <code>&lt;link rel="stylesheet" href="style.css"&gt;</code><br />
+          <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code><br />
+          <code>&lt;link rel="icon" href="favicon.ico"&gt;</code>
+        </div>
+      </section>
+
+      <!-- Special Characters -->
+      <section class="section">
+        <h2>HTML Entities (Special Characters)</h2>
+        <div class="code-block">
+          <code>&amp;lt;</code> - &lt; (less than)<br />
+          <code>&amp;gt;</code> - &gt; (greater than)<br />
+          <code>&amp;amp;</code> - &amp; (ampersand)<br />
+          <code>&amp;quot;</code> - " (quote)<br />
+          <code>&amp;apos;</code> - ' (apostrophe)<br />
+          <code>&amp;copy;</code> - &copy; (copyright)<br />
+          <code>&amp;reg;</code> - &reg; (registered)<br />
+          <code>&amp;nbsp;</code> - Non-breaking space
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="nav-btn disabled">← Previous</a>
+        <a href="page2.html" class="nav-btn">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn active" data-page="1">1</a>
+        <a href="page2.html" class="page-btn" data-page="2">2</a>
+        <a href="page3.html" class="page-btn" data-page="3">3</a>
+        <a href="page4.html" class="page-btn" data-page="4">4</a>
+        <a href="page5.html" class="page-btn" data-page="5">5</a>
+        <a href="page6.html" class="page-btn" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
