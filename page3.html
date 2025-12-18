@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet - Page 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet - Tables & Lists</h1>
+
+      <!-- Tables -->
+      <section class="section">
+        <h2>Table Structure</h2>
+        <div class="code-block">
+          <code>&lt;table&gt;</code> - Table container<br />
+          <code>&lt;thead&gt;</code> - Table header section<br />
+          <code>&lt;tbody&gt;</code> - Table body section<br />
+          <code>&lt;tfoot&gt;</code> - Table footer section<br />
+          <code>&lt;tr&gt;</code> - Table row<br />
+          <code>&lt;th&gt;</code> - Header cell<br />
+          <code>&lt;td&gt;</code> - Data cell<br />
+          <code>&lt;caption&gt;</code> - Table caption<br />
+          <code>&lt;colgroup&gt;</code> - Column group<br />
+          <code>&lt;col&gt;</code> - Column properties
+        </div>
+      </section>
+
+      <!-- Table Example -->
+      <section class="section">
+        <h2>Complete Table Example</h2>
+        <div class="code-block">
+          <code
+            >&lt;table border="1"&gt;<br />
+            &nbsp;&nbsp;&lt;caption&gt;Student Grades&lt;/caption&gt;<br />
+            &nbsp;&nbsp;&lt;thead&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Grade&lt;/th&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&lt;/thead&gt;<br />
+            &nbsp;&nbsp;&lt;tbody&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&lt;/tbody&gt;<br />
+            &lt;/table&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Table Attributes -->
+      <section class="section">
+        <h2>Table Cell Attributes</h2>
+        <div class="code-block">
+          <code>&lt;td colspan="2"&gt;</code> - Spans 2 columns<br />
+          <code>&lt;td rowspan="3"&gt;</code> - Spans 3 rows<br />
+          <code>&lt;th scope="col"&gt;</code> - Header for column<br />
+          <code>&lt;th scope="row"&gt;</code> - Header for row<br />
+          <code>&lt;table border="1"&gt;</code> - Table border<br />
+          <code>&lt;table cellpadding="10"&gt;</code> - Cell padding<br />
+          <code>&lt;table cellspacing="5"&gt;</code> - Cell spacing<br />
+          <code>&lt;td align="center"&gt;</code> - Horizontal alignment<br />
+          <code>&lt;td valign="top"&gt;</code> - Vertical alignment
+        </div>
+      </section>
+
+      <!-- Lists -->
+      <section class="section">
+        <h2>Unordered Lists</h2>
+        <div class="code-block">
+          <code
+            >&lt;ul&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br />
+            &lt;/ul&gt;</code
+          ><br /><br />
+
+          <strong>List Style Types:</strong><br />
+          <code>&lt;ul type="disc"&gt;</code> - Filled circle (default)<br />
+          <code>&lt;ul type="circle"&gt;</code> - Empty circle<br />
+          <code>&lt;ul type="square"&gt;</code> - Square bullet<br />
+          <code>&lt;ul style="list-style-type: none;"&gt;</code> - No bullets
+        </div>
+      </section>
+
+      <!-- Ordered Lists -->
+      <section class="section">
+        <h2>Ordered Lists</h2>
+        <div class="code-block">
+          <code
+            >&lt;ol&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Third&lt;/li&gt;<br />
+            &lt;/ol&gt;</code
+          ><br /><br />
+
+          <strong>List Types:</strong><br />
+          <code>&lt;ol type="1"&gt;</code> - Numbers (default)<br />
+          <code>&lt;ol type="A"&gt;</code> - Uppercase letters<br />
+          <code>&lt;ol type="a"&gt;</code> - Lowercase letters<br />
+          <code>&lt;ol type="I"&gt;</code> - Roman numerals (uppercase)<br />
+          <code>&lt;ol type="i"&gt;</code> - Roman numerals (lowercase)<br />
+          <code>&lt;ol start="5"&gt;</code> - Start from number 5<br />
+          <code>&lt;ol reversed&gt;</code> - Reverse order
+        </div>
+      </section>
+
+      <!-- Description Lists -->
+      <section class="section">
+        <h2>Description Lists</h2>
+        <div class="code-block">
+          <code
+            >&lt;dl&gt;<br />
+            &nbsp;&nbsp;&lt;dt&gt;Term 1&lt;/dt&gt;<br />
+            &nbsp;&nbsp;&lt;dd&gt;Description 1&lt;/dd&gt;<br />
+            &nbsp;&nbsp;&lt;dt&gt;Term 2&lt;/dt&gt;<br />
+            &nbsp;&nbsp;&lt;dd&gt;Description 2&lt;/dd&gt;<br />
+            &lt;/dl&gt;</code
+          ><br /><br />
+
+          <code>&lt;dl&gt;</code> - Description list<br />
+          <code>&lt;dt&gt;</code> - Term/name<br />
+          <code>&lt;dd&gt;</code> - Description/definition
+        </div>
+      </section>
+
+      <!-- Nested Lists -->
+      <section class="section">
+        <h2>Nested Lists</h2>
+        <div class="code-block">
+          <code
+            >&lt;ul&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 1<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Sub-item
+            1&lt;/li&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Sub-item
+            2&lt;/li&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+            &nbsp;&nbsp;&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+            &lt;/ul&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="page2.html" class="nav-btn">← Previous</a>
+        <a href="page4.html" class="nav-btn">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn" data-page="1">1</a>
+        <a href="page2.html" class="page-btn" data-page="2">2</a>
+        <a href="page3.html" class="page-btn active" data-page="3">3</a>
+        <a href="page4.html" class="page-btn" data-page="4">4</a>
+        <a href="page5.html" class="page-btn" data-page="5">5</a>
+        <a href="page6.html" class="page-btn" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
