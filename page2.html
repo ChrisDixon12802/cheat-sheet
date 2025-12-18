@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet - Page 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet - Forms & Inputs</h1>
+
+      <!-- Forms -->
+      <section class="section">
+        <h2>Form Elements</h2>
+        <div class="code-block">
+          <code>&lt;form action="/submit" method="POST"&gt;</code> - Form
+          container<br />
+          <code>&lt;form method="GET"&gt;</code> - GET method (URL params)<br />
+          <code>&lt;form enctype="multipart/form-data"&gt;</code> - For file
+          uploads<br />
+          <code>&lt;fieldset&gt;</code> - Groups related form elements<br />
+          <code>&lt;legend&gt;</code> - Caption for fieldset<br />
+          <code>&lt;label for="id"&gt;Text&lt;/label&gt;</code> - Input label
+        </div>
+      </section>
+
+      <!-- Input Types -->
+      <section class="section">
+        <h2>Input Types</h2>
+        <div class="code-block">
+          <code>&lt;input type="text"&gt;</code> - Single-line text<br />
+          <code>&lt;input type="password"&gt;</code> - Password field<br />
+          <code>&lt;input type="email"&gt;</code> - Email validation<br />
+          <code>&lt;input type="url"&gt;</code> - URL validation<br />
+          <code>&lt;input type="tel"&gt;</code> - Telephone number<br />
+          <code>&lt;input type="number" min="0" max="100"&gt;</code> - Number
+          input<br />
+          <code>&lt;input type="range" min="0" max="100"&gt;</code> - Slider<br />
+          <code>&lt;input type="date"&gt;</code> - Date picker<br />
+          <code>&lt;input type="time"&gt;</code> - Time picker<br />
+          <code>&lt;input type="datetime-local"&gt;</code> - Date and time<br />
+          <code>&lt;input type="month"&gt;</code> - Month picker<br />
+          <code>&lt;input type="week"&gt;</code> - Week picker<br />
+          <code>&lt;input type="color"&gt;</code> - Color picker<br />
+          <code>&lt;input type="search"&gt;</code> - Search field<br />
+          <code>&lt;input type="file"&gt;</code> - File upload<br />
+          <code>&lt;input type="file" multiple&gt;</code> - Multiple files<br />
+          <code>&lt;input type="hidden"&gt;</code> - Hidden field
+        </div>
+      </section>
+
+      <!-- Checkboxes & Radio -->
+      <section class="section">
+        <h2>Checkboxes & Radio Buttons</h2>
+        <div class="code-block">
+          <strong>Checkbox:</strong><br />
+          <code
+            >&lt;input type="checkbox" id="agree" name="agree"
+            value="yes"&gt;</code
+          ><br />
+          <code>&lt;input type="checkbox" checked&gt;</code> - Pre-checked<br /><br />
+
+          <strong>Radio Buttons (same name groups them):</strong><br />
+          <code>&lt;input type="radio" name="gender" value="male"&gt; Male</code
+          ><br />
+          <code
+            >&lt;input type="radio" name="gender" value="female"&gt;
+            Female</code
+          ><br />
+          <code>&lt;input type="radio" checked&gt;</code> - Pre-selected
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <section class="section">
+        <h2>Button Types</h2>
+        <div class="code-block">
+          <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code> -
+          Submit form<br />
+          <code>&lt;button type="button"&gt;Click&lt;/button&gt;</code> -
+          Generic button<br />
+          <code>&lt;button type="reset"&gt;Reset&lt;/button&gt;</code> - Reset
+          form<br />
+          <code>&lt;input type="submit" value="Submit"&gt;</code> - Submit
+          input<br />
+          <code>&lt;input type="button" value="Click"&gt;</code> - Button
+          input<br />
+          <code>&lt;input type="reset" value="Reset"&gt;</code> - Reset input<br />
+          <code>&lt;button disabled&gt;Disabled&lt;/button&gt;</code> - Disabled
+          button
+        </div>
+      </section>
+
+      <!-- Text Areas & Select -->
+      <section class="section">
+        <h2>Textarea & Select</h2>
+        <div class="code-block">
+          <strong>Textarea:</strong><br />
+          <code>&lt;textarea rows="4" cols="50"&gt;Text&lt;/textarea&gt;</code
+          ><br />
+          <code>&lt;textarea maxlength="200"&gt;</code> - Character limit<br />
+          <code>&lt;textarea placeholder="Enter text..."&gt;</code><br /><br />
+
+          <strong>Select Dropdown:</strong><br />
+          <code
+            >&lt;select name="options"&gt;<br />
+            &nbsp;&nbsp;&lt;option value="1"&gt;Option 1&lt;/option&gt;<br />
+            &nbsp;&nbsp;&lt;option value="2" selected&gt;Option
+            2&lt;/option&gt;<br />
+            &lt;/select&gt;</code
+          ><br /><br />
+
+          <code>&lt;select multiple&gt;</code> - Multiple selection<br />
+          <code>&lt;select size="5"&gt;</code> - Visible options<br /><br />
+
+          <strong>Option Groups:</strong><br />
+          <code
+            >&lt;optgroup label="Group 1"&gt;<br />
+            &nbsp;&nbsp;&lt;option&gt;Item&lt;/option&gt;<br />
+            &lt;/optgroup&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Form Attributes -->
+      <section class="section">
+        <h2>Form & Input Attributes</h2>
+        <div class="code-block">
+          <code>name="fieldname"</code> - Field identifier<br />
+          <code>value="default"</code> - Default value<br />
+          <code>placeholder="hint"</code> - Placeholder text<br />
+          <code>required</code> - Field must be filled<br />
+          <code>readonly</code> - Cannot be modified<br />
+          <code>disabled</code> - Field is disabled<br />
+          <code>autofocus</code> - Auto focus on load<br />
+          <code>autocomplete="off"</code> - Disable autocomplete<br />
+          <code>maxlength="100"</code> - Max character length<br />
+          <code>minlength="5"</code> - Min character length<br />
+          <code>pattern="[A-Z]{3}"</code> - Regex validation<br />
+          <code>min="0"</code> - Minimum value (number)<br />
+          <code>max="100"</code> - Maximum value (number)<br />
+          <code>step="5"</code> - Increment step<br />
+          <code>multiple</code> - Allow multiple values<br />
+          <code>accept=".pdf,.jpg"</code> - File types allowed
+        </div>
+      </section>
+
+      <!-- Datalist -->
+      <section class="section">
+        <h2>Datalist (Autocomplete)</h2>
+        <div class="code-block">
+          <code
+            >&lt;input list="browsers" name="browser"&gt;<br />
+            &lt;datalist id="browsers"&gt;<br />
+            &nbsp;&nbsp;&lt;option value="Chrome"&gt;<br />
+            &nbsp;&nbsp;&lt;option value="Firefox"&gt;<br />
+            &nbsp;&nbsp;&lt;option value="Safari"&gt;<br />
+            &lt;/datalist&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="index.html" class="nav-btn">← Previous</a>
+        <a href="page3.html" class="nav-btn">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn" data-page="1">1</a>
+        <a href="page2.html" class="page-btn active" data-page="2">2</a>
+        <a href="page3.html" class="page-btn" data-page="3">3</a>
+        <a href="page4.html" class="page-btn" data-page="4">4</a>
+        <a href="page5.html" class="page-btn" data-page="5">5</a>
+        <a href="page6.html" class="page-btn" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
