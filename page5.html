@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet - Page 5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet - Meta & Scripts</h1>
+
+      <!-- Head Elements -->
+      <section class="section">
+        <h2>Head Section Elements</h2>
+        <div class="code-block">
+          <code>&lt;head&gt;</code> - Document metadata container<br />
+          <code>&lt;title&gt;</code> - Page title (required)<br />
+          <code>&lt;base href="https://example.com/"&gt;</code> - Base URL<br />
+          <code>&lt;link&gt;</code> - External resources<br />
+          <code>&lt;meta&gt;</code> - Metadata<br />
+          <code>&lt;style&gt;</code> - Internal CSS<br />
+          <code>&lt;script&gt;</code> - JavaScript
+        </div>
+      </section>
+
+      <!-- Meta Tags -->
+      <section class="section">
+        <h2>Essential Meta Tags</h2>
+        <div class="code-block">
+          <code>&lt;meta charset="UTF-8"&gt;</code> - Character encoding<br />
+          <code
+            >&lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"&gt;</code
+          ><br />
+          <code>&lt;meta name="description" content="Page description"&gt;</code
+          ><br />
+          <code>&lt;meta name="keywords" content="html, web, tutorial"&gt;</code
+          ><br />
+          <code>&lt;meta name="author" content="Your Name"&gt;</code><br />
+          <code>&lt;meta name="robots" content="index, follow"&gt;</code><br />
+          <code>&lt;meta http-equiv="refresh" content="30"&gt;</code> - Auto
+          refresh<br />
+          <code
+            >&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Open Graph Meta -->
+      <section class="section">
+        <h2>Open Graph (Social Media)</h2>
+        <div class="code-block">
+          <code>&lt;meta property="og:title" content="Title"&gt;</code><br />
+          <code
+            >&lt;meta property="og:description" content="Description"&gt;</code
+          ><br />
+          <code>&lt;meta property="og:image" content="image.jpg"&gt;</code
+          ><br />
+          <code
+            >&lt;meta property="og:url" content="https://example.com"&gt;</code
+          ><br />
+          <code>&lt;meta property="og:type" content="website"&gt;</code><br />
+          <code>&lt;meta property="og:site_name" content="Site Name"&gt;</code
+          ><br /><br />
+
+          <strong>Twitter Cards:</strong><br />
+          <code
+            >&lt;meta name="twitter:card"
+            content="summary_large_image"&gt;</code
+          ><br />
+          <code>&lt;meta name="twitter:title" content="Title"&gt;</code><br />
+          <code
+            >&lt;meta name="twitter:description" content="Description"&gt;</code
+          ><br />
+          <code>&lt;meta name="twitter:image" content="image.jpg"&gt;</code>
+        </div>
+      </section>
+
+      <!-- Link Tags -->
+      <section class="section">
+        <h2>Link Elements</h2>
+        <div class="code-block">
+          <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> - CSS<br />
+          <code>&lt;link rel="icon" href="favicon.ico"&gt;</code> - Favicon<br />
+          <code>&lt;link rel="apple-touch-icon" href="icon.png"&gt;</code><br />
+          <code>&lt;link rel="canonical" href="https://example.com"&gt;</code
+          ><br />
+          <code
+            >&lt;link rel="alternate" href="page.html" hreflang="es"&gt;</code
+          ><br />
+          <code>&lt;link rel="preload" href="font.woff2" as="font"&gt;</code
+          ><br />
+          <code>&lt;link rel="prefetch" href="page2.html"&gt;</code><br />
+          <code>&lt;link rel="dns-prefetch" href="//example.com"&gt;</code
+          ><br />
+          <code>&lt;link rel="manifest" href="manifest.json"&gt;</code>
+        </div>
+      </section>
+
+      <!-- Script Tags -->
+      <section class="section">
+        <h2>Script Elements</h2>
+        <div class="code-block">
+          <strong>External Script:</strong><br />
+          <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code><br />
+          <code>&lt;script src="script.js" defer&gt;&lt;/script&gt;</code> -
+          Execute after parsing<br />
+          <code>&lt;script src="script.js" async&gt;&lt;/script&gt;</code> -
+          Execute asynchronously<br />
+          <code
+            >&lt;script type="module" src="module.js"&gt;&lt;/script&gt;</code
+          >
+          - ES6 module<br />
+          <code>&lt;script nomodule src="fallback.js"&gt;&lt;/script&gt;</code>
+          - Fallback<br /><br />
+
+          <strong>Inline Script:</strong><br />
+          <code
+            >&lt;script&gt;<br />
+            &nbsp;&nbsp;console.log('Hello World');<br />
+            &lt;/script&gt;</code
+          ><br /><br />
+
+          <strong>Script Placement:</strong><br />
+          • End of body - Better page load<br />
+          • Head with defer - Modern approach<br />
+          • Head with async - Independent scripts
+        </div>
+      </section>
+
+      <!-- Style Tags -->
+      <section class="section">
+        <h2>Style Elements</h2>
+        <div class="code-block">
+          <strong>Internal CSS:</strong><br />
+          <code
+            >&lt;style&gt;<br />
+            &nbsp;&nbsp;body { background: #fff; }<br />
+            &nbsp;&nbsp;.class { color: blue; }<br />
+            &lt;/style&gt;</code
+          ><br /><br />
+
+          <strong>Scoped Styles (modern):</strong><br />
+          <code>&lt;style scoped&gt;</code> - Applies only to parent element<br /><br />
+
+          <strong>Media Queries:</strong><br />
+          <code>&lt;style media="screen and (max-width: 768px)"&gt;</code>
+        </div>
+      </section>
+
+      <!-- Noscript -->
+      <section class="section">
+        <h2>Noscript Element</h2>
+        <div class="code-block">
+          <code
+            >&lt;noscript&gt;<br />
+            &nbsp;&nbsp;&lt;p&gt;JavaScript is disabled. Please enable
+            it.&lt;/p&gt;<br />
+            &lt;/noscript&gt;</code
+          ><br /><br />
+
+          Shows content when JavaScript is disabled in the browser.
+        </div>
+      </section>
+
+      <!-- Comments -->
+      <section class="section">
+        <h2>HTML Comments</h2>
+        <div class="code-block">
+          <code>&lt;!-- This is a comment --&gt;</code><br /><br />
+
+          <code
+            >&lt;!-- Multi-line comment<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can span multiple lines<br />
+            --&gt;</code
+          ><br /><br />
+
+          <strong>Conditional Comments (IE only):</strong><br />
+          <code
+            >&lt;!--[if IE]&gt;<br />
+            &nbsp;&nbsp;&lt;p&gt;Only visible in Internet Explorer&lt;/p&gt;<br />
+            &lt;![endif]--&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Character Encoding -->
+      <section class="section">
+        <h2>Character Sets</h2>
+        <div class="code-block">
+          <code>&lt;meta charset="UTF-8"&gt;</code> - Unicode (recommended)<br />
+          <code>&lt;meta charset="ISO-8859-1"&gt;</code> - Latin alphabet<br />
+          <code>&lt;meta charset="windows-1252"&gt;</code> - Windows encoding<br /><br />
+
+          Always use UTF-8 for best international character support.
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="page4.html" class="nav-btn">← Previous</a>
+        <a href="page6.html" class="nav-btn">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn" data-page="1">1</a>
+        <a href="page2.html" class="page-btn" data-page="2">2</a>
+        <a href="page3.html" class="page-btn" data-page="3">3</a>
+        <a href="page4.html" class="page-btn" data-page="4">4</a>
+        <a href="page5.html" class="page-btn active" data-page="5">5</a>
+        <a href="page6.html" class="page-btn" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
