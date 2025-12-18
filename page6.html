@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheat Sheet - Page 6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">HTML Cheat Sheet - Advanced & Special</h1>
+
+      <!-- HTML Entities -->
+      <section class="section">
+        <h2>HTML Entities (Special Characters)</h2>
+        <div class="code-block">
+          <strong>Common Symbols:</strong><br />
+          <code>&amp;lt;</code> = &lt; (less than)<br />
+          <code>&amp;gt;</code> = &gt; (greater than)<br />
+          <code>&amp;amp;</code> = &amp; (ampersand)<br />
+          <code>&amp;quot;</code> = " (double quote)<br />
+          <code>&amp;apos;</code> = ' (apostrophe)<br />
+          <code>&amp;nbsp;</code> = &nbsp; (non-breaking space)<br />
+          <code>&amp;copy;</code> = &copy; (copyright)<br />
+          <code>&amp;reg;</code> = &reg; (registered)<br />
+          <code>&amp;trade;</code> = &trade; (trademark)<br />
+          <code>&amp;euro;</code> = &euro; (euro)<br />
+          <code>&amp;pound;</code> = &pound; (pound)<br />
+          <code>&amp;yen;</code> = &yen; (yen)<br />
+          <code>&amp;cent;</code> = &cent; (cent)
+        </div>
+      </section>
+
+      <!-- More Entities -->
+      <section class="section">
+        <h2>Mathematical & Arrows</h2>
+        <div class="code-block">
+          <code>&amp;times;</code> = &times; (multiplication)<br />
+          <code>&amp;divide;</code> = &divide; (division)<br />
+          <code>&amp;plusmn;</code> = &plusmn; (plus-minus)<br />
+          <code>&amp;deg;</code> = &deg; (degree)<br />
+          <code>&amp;frac14;</code> = &frac14; (one quarter)<br />
+          <code>&amp;frac12;</code> = &frac12; (one half)<br />
+          <code>&amp;frac34;</code> = &frac34; (three quarters)<br />
+          <code>&amp;larr;</code> = &larr; (left arrow)<br />
+          <code>&amp;uarr;</code> = &uarr; (up arrow)<br />
+          <code>&amp;rarr;</code> = &rarr; (right arrow)<br />
+          <code>&amp;darr;</code> = &darr; (down arrow)<br />
+          <code>&amp;harr;</code> = &harr; (left-right arrow)
+        </div>
+      </section>
+
+      <!-- Container Elements -->
+      <section class="section">
+        <h2>Container & Grouping Elements</h2>
+        <div class="code-block">
+          <code>&lt;div&gt;</code> - Block-level container (generic)<br />
+          <code>&lt;span&gt;</code> - Inline container (generic)<br />
+          <code>&lt;pre&gt;</code> - Preformatted text (preserves
+          spaces/lines)<br />
+          <code>&lt;code&gt;</code> - Code snippet<br />
+          <code>&lt;kbd&gt;</code> - Keyboard input<br />
+          <code>&lt;samp&gt;</code> - Sample output<br />
+          <code>&lt;var&gt;</code> - Variable<br />
+          <code>&lt;blockquote&gt;</code> - Block quotation<br />
+          <code>&lt;q&gt;</code> - Inline quotation<br />
+          <code>&lt;cite&gt;</code> - Citation/reference<br />
+          <code
+            >&lt;abbr title="HyperText Markup
+            Language"&gt;HTML&lt;/abbr&gt;</code
+          ><br />
+          <code>&lt;address&gt;</code> - Contact information<br />
+          <code>&lt;bdo dir="rtl"&gt;Text&lt;/bdo&gt;</code> - Text direction
+        </div>
+      </section>
+
+      <!-- Progress & Meter -->
+      <section class="section">
+        <h2>Progress & Meter Elements</h2>
+        <div class="code-block">
+          <strong>Progress Bar:</strong><br />
+          <code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code
+          ><br />
+          <code>&lt;progress&gt;&lt;/progress&gt;</code> - Indeterminate
+          progress<br /><br />
+
+          <strong>Meter (gauge):</strong><br />
+          <code
+            >&lt;meter value="6" min="0" max="10"&gt;6 out of
+            10&lt;/meter&gt;</code
+          ><br />
+          <code>&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</code><br />
+          <code
+            >&lt;meter low="0.3" high="0.7" optimum="0.8" value="0.5"&gt;</code
+          >
+        </div>
+      </section>
+
+      <!-- Details & Summary -->
+      <section class="section">
+        <h2>Collapsible Content</h2>
+        <div class="code-block">
+          <code
+            >&lt;details&gt;<br />
+            &nbsp;&nbsp;&lt;summary&gt;Click to expand&lt;/summary&gt;<br />
+            &nbsp;&nbsp;&lt;p&gt;Hidden content here&lt;/p&gt;<br />
+            &lt;/details&gt;</code
+          ><br /><br />
+
+          <code>&lt;details open&gt;</code> - Start expanded
+        </div>
+      </section>
+
+      <!-- Dialog -->
+      <section class="section">
+        <h2>Dialog Element (Modal)</h2>
+        <div class="code-block">
+          <code
+            >&lt;dialog id="myDialog"&gt;<br />
+            &nbsp;&nbsp;&lt;h2&gt;Dialog Title&lt;/h2&gt;<br />
+            &nbsp;&nbsp;&lt;p&gt;Dialog content&lt;/p&gt;<br />
+            &nbsp;&nbsp;&lt;button
+            onclick="document.getElementById('myDialog').close()"&gt;Close&lt;/button&gt;<br />
+            &lt;/dialog&gt;</code
+          ><br /><br />
+
+          <strong>JavaScript to open:</strong><br />
+          <code>document.getElementById('myDialog').showModal();</code>
+        </div>
+      </section>
+
+      <!-- Data Attributes -->
+      <section class="section">
+        <h2>Data Attributes</h2>
+        <div class="code-block">
+          <code>&lt;div data-user-id="123" data-role="admin"&gt;</code><br />
+          <code>&lt;button data-action="delete" data-item="5"&gt;</code
+          ><br /><br />
+
+          <strong>Access in JavaScript:</strong><br />
+          <code>element.dataset.userId</code> (camelCase)<br />
+          <code>element.getAttribute('data-user-id')</code><br /><br />
+
+          Use data attributes to store custom data on elements
+        </div>
+      </section>
+
+      <!-- Global Attributes -->
+      <section class="section">
+        <h2>Global Attributes (All Elements)</h2>
+        <div class="code-block">
+          <code>id="unique-id"</code> - Unique identifier<br />
+          <code>class="class-name"</code> - CSS classes<br />
+          <code>style="color: red;"</code> - Inline styles<br />
+          <code>title="tooltip"</code> - Tooltip text<br />
+          <code>lang="en"</code> - Language<br />
+          <code>dir="ltr"</code> - Text direction (ltr/rtl)<br />
+          <code>tabindex="1"</code> - Tab order<br />
+          <code>accesskey="h"</code> - Keyboard shortcut<br />
+          <code>contenteditable="true"</code> - Editable content<br />
+          <code>draggable="true"</code> - Drag and drop<br />
+          <code>hidden</code> - Hide element<br />
+          <code>spellcheck="false"</code> - Spell checking<br />
+          <code>translate="no"</code> - Translation hint
+        </div>
+      </section>
+
+      <!-- ARIA Attributes -->
+      <section class="section">
+        <h2>ARIA (Accessibility)</h2>
+        <div class="code-block">
+          <code>role="button"</code> - Semantic role<br />
+          <code>aria-label="Close"</code> - Accessibility label<br />
+          <code>aria-labelledby="id"</code> - Label reference<br />
+          <code>aria-describedby="id"</code> - Description reference<br />
+          <code>aria-hidden="true"</code> - Hidden from screen readers<br />
+          <code>aria-live="polite"</code> - Dynamic content updates<br />
+          <code>aria-expanded="false"</code> - Expandable state<br />
+          <code>aria-checked="true"</code> - Checkbox state<br />
+          <code>aria-disabled="true"</code> - Disabled state
+        </div>
+      </section>
+
+      <!-- Output -->
+      <section class="section">
+        <h2>Output Element</h2>
+        <div class="code-block">
+          <code
+            >&lt;form
+            oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;<br />
+            &nbsp;&nbsp;&lt;input type="number" id="a" value="0"&gt; +<br />
+            &nbsp;&nbsp;&lt;input type="number" id="b" value="0"&gt; =<br />
+            &nbsp;&nbsp;&lt;output name="result" for="a
+            b"&gt;0&lt;/output&gt;<br />
+            &lt;/form&gt;</code
+          ><br /><br />
+
+          The <code>&lt;output&gt;</code> element displays calculation results
+        </div>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="page5.html" class="nav-btn">← Previous</a>
+        <a href="#" class="nav-btn disabled">Next →</a>
+      </div>
+
+      <div class="pagination">
+        <a href="index.html" class="page-btn" data-page="1">1</a>
+        <a href="page2.html" class="page-btn" data-page="2">2</a>
+        <a href="page3.html" class="page-btn" data-page="3">3</a>
+        <a href="page4.html" class="page-btn" data-page="4">4</a>
+        <a href="page5.html" class="page-btn" data-page="5">5</a>
+        <a href="page6.html" class="page-btn active" data-page="6">6</a>
+      </div>
+    </div>
+  </body>
+</html>
